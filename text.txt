@@ -1,0 +1,101 @@
+def trouver_recette(article_id):
+    recette = None
+    
+    # Recherche de la recette correspondante à l'article_id
+    for r in recettes:
+        if r['id_article'] == article_id:
+            recette = r
+            break
+    
+    # Si une recette a été trouvée, on recherche récursivement les recettes des composants nécessaires
+    if recette:
+        composant1_id = recette.get('id_composant1')
+        composant2_id = recette.get('id_composant2')
+        quantite1 = recette.get('quantite1')
+        quantite2 = recette.get('quantite2')
+        
+        composant1_recette = trouver_recette(composant1_id) if composant1_id else None
+        composant2_recette = trouver_recette(composant2_id) if composant2_id else None
+        
+        # Calcul de la quantité totale nécessaire pour produire l'article
+        quantite_totale = quantite1 + quantite2 if quantite2 else quantite1
+        
+        # Si des recettes de composants ont été trouvées, on ajoute les quantités nécessaires pour produire l'article
+        if composant1_recette:
+            quantite_totale *= quantite1
+            composant1_recette['quantite'] = quantite_totale
+            
+        if composant2_recette:
+            quantite_totale *= quantite2
+            composant2_recette['quantite'] = quantite_totale
+            
+        # On retourne la recette de l'article
+        recette['quantite'] = quantite_totale
+        return recette
+    
+    # Si aucune recette n'a été trouvée, on retourne None
+    return None
+
+
+# Fonction pour calculer les composants nécessaires pour un article
+def calculer_composants(article_id, quantite):
+    recette = trouver_recette(article_id)
+    if not recette:
+        return None
+    
+    composants = []
+    composant_id_1 = recette['id_composant1']
+    if composant_id_1:
+        composant_article_1 = trouver_article(composant_id_1)
+        if composant_article_1:
+            composants.append({'id': composant_article_1['id'], 'libelle': composant_article_1['libelle'], 'quantite': quantite * recette['quantite1']})
+
+    composant_id_2 = recette['id_composant2']
+    if composant_id_2:
+        composant_article_2 = trouver_article(composant_id_2)
+        if composant_article_2:
+            composants.append({'id': composant_article_2['id'], 'libelle': composant_article_2['libelle'], 'quantite': quantite * recette['quantite2']})
+
+    return composants
+
+composants = calculer_composants(article_id, quantite)
+if not composants:
+    print("Impossible de trouver une recette pour l'article {}".format(article_id))
+else:
+    print("Composants nécessaires pour créer {} articles d'ID {}: ".format(quantite, article_id))
+    for composant in composants:
+        print("- {} fois l'article {}".format(composant['quantite'], composant['libelle']))
+
+
+# Fonction pour calculer le temps nécessaire pour créer une quantité donnée d'un article
+def calculer_delai(article_id, quantite):
+    recette = trouver_recette(article_id)
+    if not recette:
+        return None
+    
+    temps = 0
+    operations_ids = [recette['id_operation']]
+    operation_index = 0
+
+    while operation_index < len(operations_ids):
+        operation_id = operations_ids[operation_index]
+        operation = operations[operation_id - 1]
+        temps += operation['delai'] * recette['quantite'] * quantite
+        operation_index += 1
+
+        if operation_index < len(operations_ids):
+            temps += operation['delaiInstallation']
+
+        # On utilise la fonction trouver_recette pour trouver les recettes des composants nécessaires
+        composant1_id = recette.get('id_composant1')
+        if composant1_id:
+            composant1_recette = trouver_recette(composant1_id)
+            if composant1_recette:
+                operations_ids.append(composant1_recette['id_operation'])
+        composant2_id = recette.get('id_composant2')
+        if composant2_id:
+            composant2_recette = trouver_recette(composant2_id)
+            if composant2_recette:
+                operations_ids.append(composant2_recette['id_operation'])
+    print(temps)
+    return temps

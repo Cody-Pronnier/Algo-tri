@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "code": "O09",
+    "libelle": "Perçage",
+    "delai": 2,
+    "delaiInstallation": 6
+  },
+  {
+    "id": 2,
+    "code": "O05",
+    "libelle": "Pollissage",
+    "delai": 3,
+    "delaiInstallation": 6
+  },
+  {
+    "id": 3,
+    "code": "O08",
+    "libelle": "Vernissage",
+    "delai": 2,
+    "delaiInstallation": 13
+  },
+  {
+    "id": 4,
+    "code": "O06",
+    "libelle": "Collage",
+    "delai": 5,
+    "delaiInstallation": 17
+  },
+  {
+    "id": 5,
+    "code": "O07",
+    "libelle": "Vissage",
+    "delai": 4,
+    "delaiInstallation": 9
+  },
+  {
+    "id": 6,
+    "code": "O02",
+    "libelle": "Assemblage",
+    "delai": 6,
+    "delaiInstallation": 12
+  },
+  {
+    "id": 7,
+    "code": "O04",
+    "libelle": "Pliage",
+    "delai": 4,
+    "delaiInstallation": 14
+  },
+  {
+    "id": 8,
+    "code": "O01",
+    "libelle": "Sertissage",
+    "delai": 4,
+    "delaiInstallation": 3
+  }
+]

@@ -1,0 +1,1107 @@
+[
+  { "id": 1, "code": "P915874199", "libelle": "Lorem", "id_categorie": 1 },
+  { "id": 2, "code": "P204985733", "libelle": "ipsum", "id_categorie": 4 },
+  { "id": 3, "code": "P277306097", "libelle": "dolor", "id_categorie": 4 },
+  { "id": 4, "code": "P771573319", "libelle": "sit", "id_categorie": 3 },
+  { "id": 5, "code": "P025948336", "libelle": "amet.", "id_categorie": 3 },
+  { "id": 6, "code": "P815021753", "libelle": "Ut", "id_categorie": 1 },
+  {
+    "id": 7,
+    "code": "P997263787",
+    "libelle": "exercitationem",
+    "id_categorie": 2
+  },
+  { "id": 8, "code": "P541253707", "libelle": "dolore", "id_categorie": 2 },
+  { "id": 9, "code": "P714477208", "libelle": "hic", "id_categorie": 1 },
+  { "id": 10, "code": "P948624947", "libelle": "sunt", "id_categorie": 2 },
+  { "id": 11, "code": "P599693146", "libelle": "libero", "id_categorie": 2 },
+  { "id": 12, "code": "P152590917", "libelle": "et", "id_categorie": 1 },
+  {
+    "id": 13,
+    "code": "P963875180",
+    "libelle": "temporibus",
+    "id_categorie": 3
+  },
+  { "id": 14, "code": "P361603178", "libelle": "facilis", "id_categorie": 6 },
+  { "id": 15, "code": "P916390382", "libelle": "et", "id_categorie": 3 },
+  {
+    "id": 16,
+    "code": "P497142408",
+    "libelle": "voluptatibus",
+    "id_categorie": 3
+  },
+  { "id": 17, "code": "P736540925", "libelle": "voluptas.", "id_categorie": 4 },
+  { "id": 18, "code": "P191277432", "libelle": "Est", "id_categorie": 5 },
+  {
+    "id": 19,
+    "code": "P746764416",
+    "libelle": "voluptates",
+    "id_categorie": 3
+  },
+  { "id": 20, "code": "P159989816", "libelle": "earum", "id_categorie": 6 },
+  { "id": 21, "code": "P559655862", "libelle": "quo", "id_categorie": 2 },
+  { "id": 22, "code": "P318309894", "libelle": "adipisci", "id_categorie": 1 },
+  {
+    "id": 23,
+    "code": "P912581914",
+    "libelle": "reiciendis",
+    "id_categorie": 1
+  },
+  { "id": 24, "code": "P607979918", "libelle": "ut", "id_categorie": 5 },
+  { "id": 25, "code": "P302153880", "libelle": "rerum", "id_categorie": 5 },
+  { "id": 26, "code": "P686829680", "libelle": "fuga", "id_categorie": 2 },
+  { "id": 27, "code": "P527686789", "libelle": "qui", "id_categorie": 5 },
+  { "id": 28, "code": "P577944935", "libelle": "aliquid", "id_categorie": 2 },
+  { "id": 29, "code": "P306664342", "libelle": "delectus", "id_categorie": 3 },
+  { "id": 30, "code": "P799486934", "libelle": "sit", "id_categorie": 1 },
+  { "id": 31, "code": "P077441678", "libelle": "illum", "id_categorie": 2 },
+  { "id": 32, "code": "P988747618", "libelle": "veritatis", "id_categorie": 6 },
+  { "id": 33, "code": "P711413086", "libelle": "eum", "id_categorie": 6 },
+  { "id": 34, "code": "P590822606", "libelle": "culpa", "id_categorie": 3 },
+  { "id": 35, "code": "P819873806", "libelle": "nemo", "id_categorie": 3 },
+  { "id": 36, "code": "P326901244", "libelle": "aut", "id_categorie": 3 },
+  { "id": 37, "code": "P174884831", "libelle": "sequi", "id_categorie": 1 },
+  { "id": 38, "code": "P893720456", "libelle": "deleniti.", "id_categorie": 5 },
+  { "id": 39, "code": "P943947817", "libelle": "Ut", "id_categorie": 6 },
+  { "id": 40, "code": "P038577747", "libelle": "facere", "id_categorie": 6 },
+  { "id": 41, "code": "P361045317", "libelle": "velit", "id_categorie": 2 },
+  { "id": 42, "code": "P689493373", "libelle": "a", "id_categorie": 6 },
+  {
+    "id": 43,
+    "code": "P364330947",
+    "libelle": "distinctio",
+    "id_categorie": 5
+  },
+  { "id": 44, "code": "P753174648", "libelle": "eius", "id_categorie": 5 },
+  { "id": 45, "code": "P672880429", "libelle": "in", "id_categorie": 3 },
+  { "id": 46, "code": "P104878232", "libelle": "aliquam", "id_categorie": 4 },
+  { "id": 47, "code": "P505749906", "libelle": "molestias", "id_categorie": 2 },
+  { "id": 48, "code": "P214114866", "libelle": "ut", "id_categorie": 3 },
+  {
+    "id": 49,
+    "code": "P553324642",
+    "libelle": "consequatur",
+    "id_categorie": 3
+  },
+  { "id": 50, "code": "P124278642", "libelle": "commodi", "id_categorie": 5 },
+  { "id": 51, "code": "P961419315", "libelle": "ut", "id_categorie": 2 },
+  { "id": 52, "code": "P434260683", "libelle": "Quis", "id_categorie": 6 },
+  { "id": 53, "code": "P287045500", "libelle": "officia", "id_categorie": 4 },
+  { "id": 54, "code": "P132445482", "libelle": "qui", "id_categorie": 3 },
+  {
+    "id": 55,
+    "code": "P801090942",
+    "libelle": "voluptatem",
+    "id_categorie": 1
+  },
+  { "id": 56, "code": "P608118295", "libelle": "odit", "id_categorie": 4 },
+  { "id": 57, "code": "P637318679", "libelle": "est", "id_categorie": 4 },
+  {
+    "id": 58,
+    "code": "P362238543",
+    "libelle": "voluptatibus",
+    "id_categorie": 6
+  },
+  {
+    "id": 59,
+    "code": "P899236708",
+    "libelle": "repudiandae.",
+    "id_categorie": 4
+  },
+  { "id": 60, "code": "P409467944", "libelle": "Ut", "id_categorie": 2 },
+  { "id": 61, "code": "P349629626", "libelle": "harum", "id_categorie": 4 },
+  { "id": 62, "code": "P519744327", "libelle": "quis", "id_categorie": 5 },
+  { "id": 63, "code": "P549832791", "libelle": "qui", "id_categorie": 5 },
+  { "id": 64, "code": "P189931005", "libelle": "magnam", "id_categorie": 5 },
+  {
+    "id": 65,
+    "code": "P300156683",
+    "libelle": "consequatur",
+    "id_categorie": 6
+  },
+  { "id": 66, "code": "P930990429", "libelle": "ea", "id_categorie": 3 },
+  {
+    "id": 67,
+    "code": "P754482129",
+    "libelle": "doloremque",
+    "id_categorie": 6
+  },
+  { "id": 68, "code": "P979439388", "libelle": "incidunt", "id_categorie": 1 },
+  { "id": 69, "code": "P633750587", "libelle": "sit", "id_categorie": 3 },
+  { "id": 70, "code": "P230434800", "libelle": "alias", "id_categorie": 5 },
+  {
+    "id": 71,
+    "code": "P250922272",
+    "libelle": "quod.\n\nSed",
+    "id_categorie": 3
+  },
+  { "id": 72, "code": "P563306989", "libelle": "nihil", "id_categorie": 5 },
+  { "id": 73, "code": "P063768162", "libelle": "libero", "id_categorie": 2 },
+  { "id": 74, "code": "P628919873", "libelle": "hic", "id_categorie": 3 },
+  {
+    "id": 75,
+    "code": "P953294913",
+    "libelle": "asperiores",
+    "id_categorie": 4
+  },
+  { "id": 76, "code": "P879714975", "libelle": "deserunt", "id_categorie": 4 },
+  { "id": 77, "code": "P538690166", "libelle": "et", "id_categorie": 6 },
+  { "id": 78, "code": "P054305936", "libelle": "quia", "id_categorie": 1 },
+  { "id": 79, "code": "P655459213", "libelle": "ipsa", "id_categorie": 2 },
+  { "id": 80, "code": "P114378290", "libelle": "ut", "id_categorie": 5 },
+  { "id": 81, "code": "P605513841", "libelle": "quod", "id_categorie": 1 },
+  { "id": 82, "code": "P684434367", "libelle": "aliquid.", "id_categorie": 1 },
+  { "id": 83, "code": "P605630341", "libelle": "Aut", "id_categorie": 2 },
+  { "id": 84, "code": "P974848637", "libelle": "odit", "id_categorie": 3 },
+  { "id": 85, "code": "P057352192", "libelle": "velit", "id_categorie": 1 },
+  { "id": 86, "code": "P362215082", "libelle": "ut", "id_categorie": 1 },
+  { "id": 87, "code": "P639018864", "libelle": "maxime", "id_categorie": 4 },
+  { "id": 88, "code": "P108449108", "libelle": "aliquam", "id_categorie": 2 },
+  { "id": 89, "code": "P625188976", "libelle": "et", "id_categorie": 2 },
+  { "id": 90, "code": "P800597587", "libelle": "maxime", "id_categorie": 1 },
+  { "id": 91, "code": "P127421039", "libelle": "eaque", "id_categorie": 6 },
+  { "id": 92, "code": "P235312464", "libelle": "est", "id_categorie": 4 },
+  { "id": 93, "code": "P794299237", "libelle": "dolores", "id_categorie": 2 },
+  { "id": 94, "code": "P265558822", "libelle": "neque", "id_categorie": 2 },
+  { "id": 95, "code": "P944896430", "libelle": "aut", "id_categorie": 3 },
+  { "id": 96, "code": "P927805717", "libelle": "dolorum", "id_categorie": 3 },
+  { "id": 97, "code": "P804339323", "libelle": "tenetur", "id_categorie": 1 },
+  { "id": 98, "code": "P238279499", "libelle": "ut", "id_categorie": 2 },
+  { "id": 99, "code": "P778379555", "libelle": "veritatis", "id_categorie": 3 },
+  { "id": 100, "code": "P177059310", "libelle": "vitae", "id_categorie": 3 },
+  { "id": 101, "code": "P550157917", "libelle": "ut", "id_categorie": 2 },
+  { "id": 102, "code": "P219611684", "libelle": "tempore", "id_categorie": 4 },
+  {
+    "id": 103,
+    "code": "P447584703",
+    "libelle": "reiciendis.",
+    "id_categorie": 1
+  },
+  { "id": 104, "code": "P579088495", "libelle": "Eos", "id_categorie": 3 },
+  { "id": 105, "code": "P552688397", "libelle": "nobis", "id_categorie": 2 },
+  { "id": 106, "code": "P026176529", "libelle": "omnis", "id_categorie": 3 },
+  { "id": 107, "code": "P472817484", "libelle": "sit", "id_categorie": 2 },
+  { "id": 108, "code": "P285557867", "libelle": "fuga", "id_categorie": 4 },
+  { "id": 109, "code": "P009336913", "libelle": "adipisci", "id_categorie": 1 },
+  { "id": 110, "code": "P190010993", "libelle": "et", "id_categorie": 2 },
+  { "id": 111, "code": "P922044261", "libelle": "fugit", "id_categorie": 2 },
+  { "id": 112, "code": "P040188355", "libelle": "omnis", "id_categorie": 1 },
+  { "id": 113, "code": "P434809023", "libelle": "qui", "id_categorie": 3 },
+  {
+    "id": 114,
+    "code": "P053480084",
+    "libelle": "repudiandae",
+    "id_categorie": 1
+  },
+  { "id": 115, "code": "P962973379", "libelle": "magni", "id_categorie": 1 },
+  { "id": 116, "code": "P654426675", "libelle": "et", "id_categorie": 6 },
+  {
+    "id": 117,
+    "code": "P383213271",
+    "libelle": "molestiae",
+    "id_categorie": 5
+  },
+  { "id": 118, "code": "P952786361", "libelle": "magni", "id_categorie": 3 },
+  { "id": 119, "code": "P614292024", "libelle": "qui", "id_categorie": 5 },
+  {
+    "id": 120,
+    "code": "P213101066",
+    "libelle": "temporibus",
+    "id_categorie": 1
+  },
+  { "id": 121, "code": "P222629292", "libelle": "nobis", "id_categorie": 1 },
+  { "id": 122, "code": "P473843290", "libelle": "aut", "id_categorie": 1 },
+  { "id": 123, "code": "P701328608", "libelle": "iure", "id_categorie": 6 },
+  {
+    "id": 124,
+    "code": "P085113202",
+    "libelle": "quae.\n\nId",
+    "id_categorie": 1
+  },
+  { "id": 125, "code": "P321580215", "libelle": "sint", "id_categorie": 3 },
+  { "id": 126, "code": "P352561502", "libelle": "quia", "id_categorie": 4 },
+  { "id": 127, "code": "P798066894", "libelle": "et", "id_categorie": 4 },
+  { "id": 128, "code": "P932649996", "libelle": "neque", "id_categorie": 5 },
+  { "id": 129, "code": "P269049328", "libelle": "iste", "id_categorie": 6 },
+  { "id": 130, "code": "P547296682", "libelle": "hic", "id_categorie": 5 },
+  { "id": 131, "code": "P929335460", "libelle": "quis", "id_categorie": 1 },
+  { "id": 132, "code": "P004787286", "libelle": "iste", "id_categorie": 2 },
+  { "id": 133, "code": "P235930081", "libelle": "et", "id_categorie": 1 },
+  {
+    "id": 134,
+    "code": "P165288578",
+    "libelle": "repellendus",
+    "id_categorie": 1
+  },
+  {
+    "id": 135,
+    "code": "P118652680",
+    "libelle": "molestiae",
+    "id_categorie": 2
+  },
+  { "id": 136, "code": "P097397694", "libelle": "et", "id_categorie": 5 },
+  { "id": 137, "code": "P131030462", "libelle": "odio", "id_categorie": 1 },
+  { "id": 138, "code": "P362959261", "libelle": "rerum", "id_categorie": 2 },
+  { "id": 139, "code": "P421704949", "libelle": "eum", "id_categorie": 2 },
+  {
+    "id": 140,
+    "code": "P019646992",
+    "libelle": "voluptate",
+    "id_categorie": 4
+  },
+  { "id": 141, "code": "P833120147", "libelle": "atque", "id_categorie": 1 },
+  { "id": 142, "code": "P106659789", "libelle": "est", "id_categorie": 2 },
+  { "id": 143, "code": "P033938536", "libelle": "illo", "id_categorie": 2 },
+  {
+    "id": 144,
+    "code": "P849713343",
+    "libelle": "exercitationem.",
+    "id_categorie": 6
+  },
+  { "id": 145, "code": "P146751141", "libelle": "Ea", "id_categorie": 6 },
+  {
+    "id": 146,
+    "code": "P184615705",
+    "libelle": "voluptatibus",
+    "id_categorie": 5
+  },
+  {
+    "id": 147,
+    "code": "P482825133",
+    "libelle": "reprehenderit",
+    "id_categorie": 3
+  },
+  { "id": 148, "code": "P860278582", "libelle": "aut", "id_categorie": 1 },
+  { "id": 149, "code": "P852917540", "libelle": "tempora", "id_categorie": 1 },
+  { "id": 150, "code": "P683751987", "libelle": "nisi", "id_categorie": 6 },
+  { "id": 151, "code": "P860007348", "libelle": "sit", "id_categorie": 2 },
+  { "id": 152, "code": "P248780808", "libelle": "aperiam", "id_categorie": 3 },
+  { "id": 153, "code": "P663882028", "libelle": "dolores", "id_categorie": 4 },
+  { "id": 154, "code": "P573067749", "libelle": "33", "id_categorie": 6 },
+  { "id": 155, "code": "P873692691", "libelle": "commodi", "id_categorie": 6 },
+  {
+    "id": 156,
+    "code": "P649260238",
+    "libelle": "consequatur",
+    "id_categorie": 6
+  },
+  { "id": 157, "code": "P625223149", "libelle": "quo", "id_categorie": 1 },
+  { "id": 158, "code": "P178335061", "libelle": "dolores", "id_categorie": 3 },
+  { "id": 159, "code": "P016005890", "libelle": "odio.", "id_categorie": 2 },
+  { "id": 160, "code": "P545024298", "libelle": "Est", "id_categorie": 6 },
+  { "id": 161, "code": "P677103852", "libelle": "quidem", "id_categorie": 1 },
+  { "id": 162, "code": "P750446397", "libelle": "autem", "id_categorie": 4 },
+  { "id": 163, "code": "P720920460", "libelle": "ut", "id_categorie": 4 },
+  {
+    "id": 164,
+    "code": "P353263142",
+    "libelle": "consectetur",
+    "id_categorie": 3
+  },
+  { "id": 165, "code": "P603554362", "libelle": "amet", "id_categorie": 5 },
+  { "id": 166, "code": "P957982412", "libelle": "ut", "id_categorie": 6 },
+  {
+    "id": 167,
+    "code": "P979249007",
+    "libelle": "veritatis",
+    "id_categorie": 5
+  },
+  {
+    "id": 168,
+    "code": "P022297828",
+    "libelle": "vero?\n\nAut",
+    "id_categorie": 4
+  },
+  { "id": 169, "code": "P173742151", "libelle": "tempora", "id_categorie": 2 },
+  {
+    "id": 170,
+    "code": "P801817305",
+    "libelle": "blanditiis",
+    "id_categorie": 4
+  },
+  { "id": 171, "code": "P487860100", "libelle": "est", "id_categorie": 3 },
+  { "id": 172, "code": "P033848619", "libelle": "commodi", "id_categorie": 4 },
+  { "id": 173, "code": "P705662823", "libelle": "magni", "id_categorie": 1 },
+  { "id": 174, "code": "P426768293", "libelle": "ex", "id_categorie": 2 },
+  {
+    "id": 175,
+    "code": "P016853024",
+    "libelle": "necessitatibus",
+    "id_categorie": 4
+  },
+  { "id": 176, "code": "P803960272", "libelle": "deleniti", "id_categorie": 4 },
+  { "id": 177, "code": "P969242322", "libelle": "et", "id_categorie": 4 },
+  {
+    "id": 178,
+    "code": "P434330823",
+    "libelle": "molestiae",
+    "id_categorie": 1
+  },
+  { "id": 179, "code": "P263927180", "libelle": "saepe", "id_categorie": 3 },
+  { "id": 180, "code": "P016643463", "libelle": "eos", "id_categorie": 1 },
+  { "id": 181, "code": "P291435807", "libelle": "totam", "id_categorie": 3 },
+  { "id": 182, "code": "P407248676", "libelle": "sunt", "id_categorie": 4 },
+  { "id": 183, "code": "P161935989", "libelle": "ex", "id_categorie": 6 },
+  { "id": 184, "code": "P587933951", "libelle": "internos", "id_categorie": 1 },
+  { "id": 185, "code": "P453861819", "libelle": "galisum!", "id_categorie": 5 },
+  { "id": 186, "code": "P505507271", "libelle": "Eum", "id_categorie": 6 },
+  { "id": 187, "code": "P165950929", "libelle": "facilis", "id_categorie": 3 },
+  { "id": 188, "code": "P313232866", "libelle": "galisum", "id_categorie": 1 },
+  { "id": 189, "code": "P068311573", "libelle": "id", "id_categorie": 5 },
+  { "id": 190, "code": "P401859296", "libelle": "quia", "id_categorie": 5 },
+  { "id": 191, "code": "P804361795", "libelle": "maiores", "id_categorie": 3 },
+  { "id": 192, "code": "P816231119", "libelle": "vel", "id_categorie": 6 },
+  { "id": 193, "code": "P668070239", "libelle": "nostrum", "id_categorie": 6 },
+  {
+    "id": 194,
+    "code": "P891657871",
+    "libelle": "perferendis",
+    "id_categorie": 2
+  },
+  { "id": 195, "code": "P454078667", "libelle": "ad", "id_categorie": 1 },
+  {
+    "id": 196,
+    "code": "P595419753",
+    "libelle": "molestiae",
+    "id_categorie": 5
+  },
+  {
+    "id": 197,
+    "code": "P614862798",
+    "libelle": "recusandae",
+    "id_categorie": 5
+  },
+  { "id": 198, "code": "P288054760", "libelle": "quo", "id_categorie": 3 },
+  { "id": 199, "code": "P595685439", "libelle": "nulla", "id_categorie": 6 },
+  { "id": 200, "code": "P114262946", "libelle": "beatae", "id_categorie": 2 },
+  { "id": 201, "code": "P784258446", "libelle": "ut", "id_categorie": 4 },
+  {
+    "id": 202,
+    "code": "P578503422",
+    "libelle": "voluptatibus",
+    "id_categorie": 6
+  },
+  { "id": 203, "code": "P539741801", "libelle": "galisum", "id_categorie": 2 },
+  { "id": 204, "code": "P963198772", "libelle": "ut", "id_categorie": 2 },
+  { "id": 205, "code": "P196768488", "libelle": "neque", "id_categorie": 3 },
+  { "id": 206, "code": "P094246157", "libelle": "galisum?", "id_categorie": 3 },
+  { "id": 207, "code": "P880925351", "libelle": "Et", "id_categorie": 1 },
+  {
+    "id": 208,
+    "code": "P121888316",
+    "libelle": "perferendis",
+    "id_categorie": 3
+  },
+  {
+    "id": 209,
+    "code": "P966665557",
+    "libelle": "reprehenderit",
+    "id_categorie": 6
+  },
+  { "id": 210, "code": "P467662869", "libelle": "et", "id_categorie": 5 },
+  { "id": 211, "code": "P438317705", "libelle": "tenetur", "id_categorie": 3 },
+  {
+    "id": 212,
+    "code": "P788599949",
+    "libelle": "explicabo",
+    "id_categorie": 3
+  },
+  { "id": 213, "code": "P628046660", "libelle": "sit", "id_categorie": 3 },
+  {
+    "id": 214,
+    "code": "P774433485",
+    "libelle": "voluptatem",
+    "id_categorie": 4
+  },
+  { "id": 215, "code": "P988027474", "libelle": "ipsa", "id_categorie": 5 },
+  { "id": 216, "code": "P616836949", "libelle": "eos", "id_categorie": 5 },
+  { "id": 217, "code": "P120102355", "libelle": "nemo", "id_categorie": 5 },
+  { "id": 218, "code": "P750000958", "libelle": "iusto.", "id_categorie": 2 },
+  { "id": 219, "code": "P389697755", "libelle": "Quo", "id_categorie": 1 },
+  {
+    "id": 220,
+    "code": "P698485932",
+    "libelle": "molestias",
+    "id_categorie": 5
+  },
+  { "id": 221, "code": "P323336425", "libelle": "corrupti", "id_categorie": 3 },
+  { "id": 222, "code": "P521224362", "libelle": "in", "id_categorie": 4 },
+  { "id": 223, "code": "P636112565", "libelle": "eligendi", "id_categorie": 6 },
+  { "id": 224, "code": "P616889772", "libelle": "totam", "id_categorie": 3 },
+  { "id": 225, "code": "P176111196", "libelle": "et", "id_categorie": 6 },
+  { "id": 226, "code": "P029886694", "libelle": "saepe", "id_categorie": 6 },
+  { "id": 227, "code": "P621099915", "libelle": "illo", "id_categorie": 6 },
+  { "id": 228, "code": "P015839521", "libelle": "qui", "id_categorie": 2 },
+  { "id": 229, "code": "P215897894", "libelle": "fugiat", "id_categorie": 4 },
+  { "id": 230, "code": "P031970938", "libelle": "fugit", "id_categorie": 2 },
+  { "id": 231, "code": "P512161040", "libelle": "et", "id_categorie": 6 },
+  {
+    "id": 232,
+    "code": "P464892415",
+    "libelle": "voluptatem",
+    "id_categorie": 6
+  },
+  { "id": 233, "code": "P787978988", "libelle": "facere", "id_categorie": 5 },
+  { "id": 234, "code": "P545217727", "libelle": "vel", "id_categorie": 5 },
+  { "id": 235, "code": "P362151703", "libelle": "earum", "id_categorie": 1 },
+  {
+    "id": 236,
+    "code": "P175105363",
+    "libelle": "dolore.\n\nQui",
+    "id_categorie": 6
+  },
+  {
+    "id": 237,
+    "code": "P789071737",
+    "libelle": "molestiae",
+    "id_categorie": 5
+  },
+  { "id": 238, "code": "P420042628", "libelle": "totam", "id_categorie": 5 },
+  { "id": 239, "code": "P732997962", "libelle": "id", "id_categorie": 6 },
+  { "id": 240, "code": "P404861954", "libelle": "quia", "id_categorie": 4 },
+  { "id": 241, "code": "P825315916", "libelle": "dolorem", "id_categorie": 5 },
+  { "id": 242, "code": "P911993751", "libelle": "sit", "id_categorie": 1 },
+  { "id": 243, "code": "P084021036", "libelle": "ipsa", "id_categorie": 3 },
+  { "id": 244, "code": "P684123960", "libelle": "fugit", "id_categorie": 6 },
+  { "id": 245, "code": "P168556721", "libelle": "quo", "id_categorie": 3 },
+  { "id": 246, "code": "P790411756", "libelle": "nemo", "id_categorie": 2 },
+  {
+    "id": 247,
+    "code": "P446388648",
+    "libelle": "explicabo.",
+    "id_categorie": 3
+  },
+  { "id": 248, "code": "P860708003", "libelle": "Qui", "id_categorie": 2 },
+  { "id": 249, "code": "P964374104", "libelle": "possimus", "id_categorie": 3 },
+  { "id": 250, "code": "P239746541", "libelle": "voluptas", "id_categorie": 6 },
+  { "id": 251, "code": "P305610426", "libelle": "aut", "id_categorie": 3 },
+  { "id": 252, "code": "P808812539", "libelle": "omnis", "id_categorie": 4 },
+  { "id": 253, "code": "P127231449", "libelle": "dolores", "id_categorie": 5 },
+  { "id": 254, "code": "P209719656", "libelle": "sit", "id_categorie": 3 },
+  { "id": 255, "code": "P666903964", "libelle": "omnis", "id_categorie": 1 },
+  { "id": 256, "code": "P705360886", "libelle": "alias", "id_categorie": 4 },
+  { "id": 257, "code": "P526092567", "libelle": "qui", "id_categorie": 4 },
+  { "id": 258, "code": "P514380211", "libelle": "magnam", "id_categorie": 3 },
+  {
+    "id": 259,
+    "code": "P993623384",
+    "libelle": "necessitatibus.",
+    "id_categorie": 1
+  },
+  { "id": 260, "code": "P424976317", "libelle": "33", "id_categorie": 2 },
+  { "id": 261, "code": "P144011465", "libelle": "facilis", "id_categorie": 1 },
+  {
+    "id": 262,
+    "code": "P445128407",
+    "libelle": "temporibus",
+    "id_categorie": 6
+  },
+  { "id": 263, "code": "P793607671", "libelle": "rem", "id_categorie": 5 },
+  {
+    "id": 264,
+    "code": "P632653165",
+    "libelle": "voluptatum",
+    "id_categorie": 1
+  },
+  {
+    "id": 265,
+    "code": "P782442842",
+    "libelle": "doloremque",
+    "id_categorie": 3
+  },
+  { "id": 266, "code": "P014254746", "libelle": "in", "id_categorie": 4 },
+  { "id": 267, "code": "P723945238", "libelle": "eligendi", "id_categorie": 5 },
+  {
+    "id": 268,
+    "code": "P576961981",
+    "libelle": "architecto",
+    "id_categorie": 2
+  },
+  { "id": 269, "code": "P712974223", "libelle": "et", "id_categorie": 3 },
+  { "id": 270, "code": "P833985205", "libelle": "quia", "id_categorie": 6 },
+  {
+    "id": 271,
+    "code": "P031003386",
+    "libelle": "provident",
+    "id_categorie": 6
+  },
+  { "id": 272, "code": "P653061347", "libelle": "est", "id_categorie": 3 },
+  { "id": 273, "code": "P172296608", "libelle": "quia", "id_categorie": 1 },
+  { "id": 274, "code": "P902299032", "libelle": "quis", "id_categorie": 3 },
+  { "id": 275, "code": "P994605366", "libelle": "aut", "id_categorie": 1 },
+  { "id": 276, "code": "P266129764", "libelle": "dolores", "id_categorie": 6 },
+  { "id": 277, "code": "P346832752", "libelle": "repellat", "id_categorie": 6 },
+  { "id": 278, "code": "P935774501", "libelle": "eum", "id_categorie": 2 },
+  { "id": 279, "code": "P638374279", "libelle": "esse", "id_categorie": 2 },
+  {
+    "id": 280,
+    "code": "P384547925",
+    "libelle": "nisi.\n\nNon",
+    "id_categorie": 6
+  },
+  { "id": 281, "code": "P007616820", "libelle": "impedit", "id_categorie": 4 },
+  { "id": 282, "code": "P884440356", "libelle": "natus", "id_categorie": 6 },
+  { "id": 283, "code": "P399351352", "libelle": "ut", "id_categorie": 1 },
+  { "id": 284, "code": "P343435721", "libelle": "dolorem", "id_categorie": 3 },
+  { "id": 285, "code": "P519124582", "libelle": "optio", "id_categorie": 2 },
+  { "id": 286, "code": "P565315779", "libelle": "ea", "id_categorie": 1 },
+  { "id": 287, "code": "P269205181", "libelle": "dolor", "id_categorie": 5 },
+  {
+    "id": 288,
+    "code": "P650078597",
+    "libelle": "doloribus",
+    "id_categorie": 2
+  },
+  { "id": 289, "code": "P442777472", "libelle": "non", "id_categorie": 5 },
+  {
+    "id": 290,
+    "code": "P263651604",
+    "libelle": "explicabo",
+    "id_categorie": 1
+  },
+  { "id": 291, "code": "P989925632", "libelle": "deleniti", "id_categorie": 1 },
+  { "id": 292, "code": "P158673379", "libelle": "qui", "id_categorie": 2 },
+  { "id": 293, "code": "P823590032", "libelle": "quam", "id_categorie": 1 },
+  { "id": 294, "code": "P641930054", "libelle": "dicta", "id_categorie": 4 },
+  { "id": 295, "code": "P738880205", "libelle": "ea", "id_categorie": 6 },
+  { "id": 296, "code": "P768610895", "libelle": "iusto", "id_categorie": 6 },
+  { "id": 297, "code": "P626413890", "libelle": "iste.", "id_categorie": 2 },
+  { "id": 298, "code": "P826236798", "libelle": "Nam", "id_categorie": 3 },
+  {
+    "id": 299,
+    "code": "P251942349",
+    "libelle": "reiciendis",
+    "id_categorie": 6
+  },
+  { "id": 300, "code": "P781001385", "libelle": "dolore", "id_categorie": 6 },
+  { "id": 301, "code": "P149179906", "libelle": "et", "id_categorie": 4 },
+  { "id": 302, "code": "P402895409", "libelle": "fugit", "id_categorie": 3 },
+  { "id": 303, "code": "P566937355", "libelle": "nobis", "id_categorie": 1 },
+  { "id": 304, "code": "P626000582", "libelle": "et", "id_categorie": 1 },
+  { "id": 305, "code": "P429190877", "libelle": "nisi", "id_categorie": 4 },
+  { "id": 306, "code": "P267952668", "libelle": "modi", "id_categorie": 2 },
+  { "id": 307, "code": "P052190742", "libelle": "in", "id_categorie": 6 },
+  { "id": 308, "code": "P457095737", "libelle": "quod", "id_categorie": 4 },
+  { "id": 309, "code": "P128906488", "libelle": "fugit", "id_categorie": 2 },
+  { "id": 310, "code": "P273245262", "libelle": "est", "id_categorie": 3 },
+  { "id": 311, "code": "P979506876", "libelle": "corporis", "id_categorie": 3 },
+  { "id": 312, "code": "P077798625", "libelle": "dolores.", "id_categorie": 5 },
+  { "id": 313, "code": "P450472529", "libelle": "Aut", "id_categorie": 6 },
+  { "id": 314, "code": "P018966801", "libelle": "neque", "id_categorie": 4 },
+  {
+    "id": 315,
+    "code": "P743416449",
+    "libelle": "laboriosam",
+    "id_categorie": 1
+  },
+  { "id": 316, "code": "P660181875", "libelle": "aut", "id_categorie": 3 },
+  {
+    "id": 317,
+    "code": "P070660056",
+    "libelle": "inventore",
+    "id_categorie": 1
+  },
+  { "id": 318, "code": "P372754688", "libelle": "numquam", "id_categorie": 3 },
+  { "id": 319, "code": "P651793304", "libelle": "aut", "id_categorie": 3 },
+  { "id": 320, "code": "P140702487", "libelle": "dicta", "id_categorie": 5 },
+  {
+    "id": 321,
+    "code": "P748132552",
+    "libelle": "similique",
+    "id_categorie": 2
+  },
+  { "id": 322, "code": "P318555333", "libelle": "eum", "id_categorie": 3 },
+  { "id": 323, "code": "P348379037", "libelle": "beatae", "id_categorie": 5 },
+  {
+    "id": 324,
+    "code": "P786229220",
+    "libelle": "voluptatem.",
+    "id_categorie": 1
+  },
+  { "id": 325, "code": "P886009017", "libelle": "Nam", "id_categorie": 6 },
+  {
+    "id": 326,
+    "code": "P071357459",
+    "libelle": "reiciendis",
+    "id_categorie": 5
+  },
+  { "id": 327, "code": "P698760276", "libelle": "neque", "id_categorie": 2 },
+  { "id": 328, "code": "P279729033", "libelle": "id", "id_categorie": 2 },
+  { "id": 329, "code": "P302364367", "libelle": "enim", "id_categorie": 2 },
+  {
+    "id": 330,
+    "code": "P672634767",
+    "libelle": "excepturi",
+    "id_categorie": 4
+  },
+  { "id": 331, "code": "P456080768", "libelle": "ut", "id_categorie": 5 },
+  { "id": 332, "code": "P262499570", "libelle": "autem", "id_categorie": 6 },
+  { "id": 333, "code": "P944255575", "libelle": "harum", "id_categorie": 4 },
+  { "id": 334, "code": "P933779197", "libelle": "ut", "id_categorie": 6 },
+  { "id": 335, "code": "P836129292", "libelle": "debitis", "id_categorie": 1 },
+  { "id": 336, "code": "P379308901", "libelle": "tenetur", "id_categorie": 3 },
+  { "id": 337, "code": "P388156658", "libelle": "quo", "id_categorie": 6 },
+  { "id": 338, "code": "P802856619", "libelle": "dolorum", "id_categorie": 1 },
+  {
+    "id": 422,
+    "code": "A003",
+    "libelle": "created at 1651138805281",
+    "id_categorie": 1
+  },
+  {
+    "id": 423,
+    "code": "A001",
+    "libelle": "created at 1651138805281",
+    "id_categorie": 1
+  },
+  {
+    "id": 424,
+    "code": "A100",
+    "libelle": "created at 1651148537380",
+    "id_categorie": 1
+  },
+  {
+    "id": 426,
+    "code": "cr_001",
+    "libelle": "created at 1652201731615",
+    "id_categorie": 1
+  },
+  {
+    "id": 538,
+    "code": "J0010",
+    "libelle": "created at 1652259530964",
+    "id_categorie": 1
+  },
+  {
+    "id": 539,
+    "code": "J0100",
+    "libelle": "created at 1652259530964",
+    "id_categorie": 1
+  },
+  {
+    "id": 540,
+    "code": "J0001",
+    "libelle": "created at 1652259530964",
+    "id_categorie": 1
+  },
+  {
+    "id": 541,
+    "code": "J0020",
+    "libelle": "created at 1652259530964",
+    "id_categorie": 1
+  },
+  {
+    "id": 542,
+    "code": "J0200",
+    "libelle": "created at 1652259530964",
+    "id_categorie": 1
+  },
+  {
+    "id": 543,
+    "code": "J1000",
+    "libelle": "created at 1652259530964",
+    "id_categorie": 1
+  },
+  {
+    "id": 544,
+    "code": "cr_002",
+    "libelle": "created at 1652340973410",
+    "id_categorie": 1
+  },
+  {
+    "id": 547,
+    "code": "C845",
+    "libelle": "created at 1654785853609",
+    "id_categorie": 5
+  },
+  {
+    "id": 548,
+    "code": "P2625482",
+    "libelle": "created at 1654786627565",
+    "id_categorie": 6
+  },
+  {
+    "id": 549,
+    "code": "P000505",
+    "libelle": "created at 1654970863447",
+    "id_categorie": 2
+  },
+  {
+    "id": 552,
+    "code": "",
+    "libelle": "created at 1654970980018",
+    "id_categorie": 6
+  },
+  {
+    "id": 553,
+    "code": "045654654",
+    "libelle": "created at 1654971830664",
+    "id_categorie": 4
+  },
+  {
+    "id": 554,
+    "code": "P771573348",
+    "libelle": "created at 1656322114747",
+    "id_categorie": 5
+  },
+  {
+    "id": 555,
+    "code": "P771573349",
+    "libelle": "created at 1656322183564",
+    "id_categorie": 4
+  },
+  {
+    "id": 556,
+    "code": "P771573350",
+    "libelle": "created at 1656322183564",
+    "id_categorie": 5
+  },
+  {
+    "id": 557,
+    "code": "P771573351",
+    "libelle": "created at 1656322605008",
+    "id_categorie": 4
+  },
+  {
+    "id": 558,
+    "code": "P771573352",
+    "libelle": "created at 1656322605008",
+    "id_categorie": 5
+  },
+  {
+    "id": 560,
+    "code": "P979439389",
+    "libelle": "created at 1656324930934",
+    "id_categorie": 2
+  },
+  {
+    "id": 561,
+    "code": "P054121400",
+    "libelle": "created at 1656325959272",
+    "id_categorie": 1
+  },
+  {
+    "id": 562,
+    "code": "P054121415",
+    "libelle": "created at 1656325959272",
+    "id_categorie": 2
+  },
+  {
+    "id": 563,
+    "code": "P252421539",
+    "libelle": "created at 1656335832562",
+    "id_categorie": 1
+  },
+  {
+    "id": 564,
+    "code": "P252421540",
+    "libelle": "created at 1656335832562",
+    "id_categorie": 2
+  },
+  {
+    "id": 565,
+    "code": "P252421541",
+    "libelle": "created at 1656338551559",
+    "id_categorie": 2
+  },
+  {
+    "id": 566,
+    "code": "P915877777",
+    "libelle": "created at 1656553070937",
+    "id_categorie": 1
+  },
+  {
+    "id": 567,
+    "code": "P915877727",
+    "libelle": "created at 1656553128089",
+    "id_categorie": 1
+  },
+  {
+    "id": 568,
+    "code": "P054121416",
+    "libelle": "created at 1656586024004",
+    "id_categorie": 2
+  },
+  {
+    "id": 569,
+    "code": "P054121417",
+    "libelle": "created at 1656586024004",
+    "id_categorie": 3
+  },
+  {
+    "id": 570,
+    "code": "P054121746",
+    "libelle": "created at 1656586629024",
+    "id_categorie": 2
+  },
+  {
+    "id": 571,
+    "code": "P054121762",
+    "libelle": "created at 1656591060216",
+    "id_categorie": 1
+  },
+  {
+    "id": 572,
+    "code": "dsqdqsd",
+    "libelle": "created at 1656593519680",
+    "id_categorie": 2
+  },
+  {
+    "id": 573,
+    "code": "P141141414",
+    "libelle": "created at 1656594667102",
+    "id_categorie": 2
+  },
+  {
+    "id": 574,
+    "code": "A88",
+    "libelle": "created at 1656599752938",
+    "id_categorie": 1
+  },
+  {
+    "id": 575,
+    "code": "toto",
+    "libelle": "created at 1656649183732",
+    "id_categorie": 1
+  },
+  {
+    "id": 576,
+    "code": "toto2",
+    "libelle": "created at 1656650129813",
+    "id_categorie": 1
+  },
+  {
+    "id": 577,
+    "code": "toto3",
+    "libelle": "created at 1656650202496",
+    "id_categorie": 1
+  },
+  {
+    "id": 578,
+    "code": "toto4",
+    "libelle": "created at 1656650307458",
+    "id_categorie": 1
+  },
+  {
+    "id": 580,
+    "code": "toto5",
+    "libelle": "created at 1656650357587",
+    "id_categorie": 1
+  },
+  {
+    "id": 581,
+    "code": "tota",
+    "libelle": "created at 1656650869432",
+    "id_categorie": 1
+  },
+  {
+    "id": 582,
+    "code": "tata",
+    "libelle": "created at 1656651008605",
+    "id_categorie": 1
+  },
+  {
+    "id": 583,
+    "code": "tata2",
+    "libelle": "created at 1656651059128",
+    "id_categorie": 1
+  },
+  {
+    "id": 584,
+    "code": "tata3",
+    "libelle": "created at 1656651111309",
+    "id_categorie": 1
+  },
+  {
+    "id": 585,
+    "code": "titi",
+    "libelle": "created at 1656651549511",
+    "id_categorie": 1
+  },
+  {
+    "id": 586,
+    "code": "titi2",
+    "libelle": "created at 1656651866344",
+    "id_categorie": 1
+  },
+  {
+    "id": 587,
+    "code": "test5",
+    "libelle": "created at 1656651909268",
+    "id_categorie": 1
+  },
+  {
+    "id": 588,
+    "code": "test8",
+    "libelle": "created at 1656651971753",
+    "id_categorie": 1
+  },
+  {
+    "id": 589,
+    "code": "testtest25",
+    "libelle": "created at 1656652965332",
+    "id_categorie": 1
+  },
+  {
+    "id": 590,
+    "code": "test39",
+    "libelle": "created at 1656653483397",
+    "id_categorie": 1
+  },
+  {
+    "id": 591,
+    "code": "test40",
+    "libelle": "created at 1656653483397",
+    "id_categorie": 1
+  },
+  {
+    "id": 593,
+    "code": "test42",
+    "libelle": "created at 1656653508470",
+    "id_categorie": 1
+  },
+  {
+    "id": 594,
+    "code": "test41",
+    "libelle": "created at 1656653508470",
+    "id_categorie": 1
+  },
+  {
+    "id": 595,
+    "code": "test44",
+    "libelle": "created at 1656653580928",
+    "id_categorie": 1
+  },
+  {
+    "id": 596,
+    "code": "test43",
+    "libelle": "created at 1656653580928",
+    "id_categorie": 1
+  },
+  {
+    "id": 597,
+    "code": "test50",
+    "libelle": "created at 1656653885940",
+    "id_categorie": 1
+  },
+  {
+    "id": 598,
+    "code": "test52",
+    "libelle": "created at 1656653885940",
+    "id_categorie": 1
+  },
+  {
+    "id": 599,
+    "code": "test53",
+    "libelle": "created at 1656653885940",
+    "id_categorie": 1
+  },
+  {
+    "id": 600,
+    "code": "test54",
+    "libelle": "created at 1656653920505",
+    "id_categorie": 1
+  },
+  {
+    "id": 601,
+    "code": "test55",
+    "libelle": "created at 1656653920505",
+    "id_categorie": 1
+  },
+  {
+    "id": 602,
+    "code": "test56",
+    "libelle": "created at 1656653920505",
+    "id_categorie": 1
+  },
+  {
+    "id": 605,
+    "code": "tist",
+    "libelle": "created at 1656654132723",
+    "id_categorie": 1
+  },
+  {
+    "id": 606,
+    "code": "tist2",
+    "libelle": "created at 1656654132723",
+    "id_categorie": 1
+  },
+  {
+    "id": 607,
+    "code": "tist3",
+    "libelle": "created at 1656654132723",
+    "id_categorie": 1
+  },
+  {
+    "id": 608,
+    "code": "twist",
+    "libelle": "created at 1656654164619",
+    "id_categorie": 1
+  },
+  {
+    "id": 609,
+    "code": "codeR",
+    "libelle": "created at 1656654244809",
+    "id_categorie": 1
+  },
+  {
+    "id": 610,
+    "code": "codeR2",
+    "libelle": "created at 1656654244809",
+    "id_categorie": 1
+  },
+  {
+    "id": 611,
+    "code": "codeR3",
+    "libelle": "created at 1656654244809",
+    "id_categorie": 1
+  },
+  {
+    "id": 612,
+    "code": "codeR4",
+    "libelle": "created at 1656654276970",
+    "id_categorie": 1
+  },
+  {
+    "id": 613,
+    "code": "codeR5",
+    "libelle": "created at 1656654276970",
+    "id_categorie": 1
+  },
+  {
+    "id": 614,
+    "code": "codeR6",
+    "libelle": "created at 1656654276970",
+    "id_categorie": 1
+  },
+  {
+    "id": 615,
+    "code": "test70",
+    "libelle": "created at 1656664849080",
+    "id_categorie": 1
+  },
+  {
+    "id": 617,
+    "code": "Ptestteste",
+    "libelle": "created at 1656668714178",
+    "id_categorie": 3
+  },
+  {
+    "id": 618,
+    "code": "P277305263",
+    "libelle": "created at 1656668714178",
+    "id_categorie": 2
+  },
+  {
+    "id": 619,
+    "code": "P277306021",
+    "libelle": "created at 1656670754711",
+    "id_categorie": 3
+  },
+  {
+    "id": 620,
+    "code": "P277306034",
+    "libelle": "created at 1656671885229",
+    "id_categorie": 2
+  }
+]
