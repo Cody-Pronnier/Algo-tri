@@ -57,28 +57,27 @@ def trouver_recette(article_id, liste_recette=None):
     # On retourne la liste de toutes les recettes trouvées.
     return liste_recette
 
+
 def transformer_recettes(liste_recette):
     nouvelle_liste = []
-    
+
     while liste_recette:
         recette = liste_recette.pop(0)  # Prenez la première recette de la liste.
-        
+
         # Chercher si la recette existe déjà dans la nouvelle liste.
-        for r in nouvelle_liste:
+        for index, r in enumerate(nouvelle_liste):
             if r['id_article'] == recette['id_article'] and r['id_operation'] == recette['id_operation']:
-                # si elle existe, mettez à jour la quantité et arrêtez la boucle.
+                # si elle existe, mettez à jour la quantité et déplacez-la en haut de la liste.
                 r['quantite1'] += recette['quantite1']
                 if recette['id_composant2'] is not None:
                     if r['id_composant2'] == recette['id_composant2']:
                         r['quantite2'] += recette['quantite2']
+                nouvelle_liste.insert(0, nouvelle_liste.pop(index))
                 break
         else:
-            # si la recette n'existe pas dans la nouvelle liste, ajoutez-la.
-            nouvelle_liste.append(recette)
+            # si la recette n'existe pas dans la nouvelle liste, ajoutez-la en haut.
+            nouvelle_liste.insert(0, recette)
 
-    # je sais pas encore comment faire ! Sale noob.
-    #nouvelle_liste.reverse()
-    
     return nouvelle_liste
 
 def calculer_temps_production(nouvelle_liste, operations, nombre_workunits, articles_primaires):
@@ -135,7 +134,6 @@ def calculer_temps_production(nouvelle_liste, operations, nombre_workunits, arti
 
     # Le temps total de production est le temps de fin de la dernière unité de travail à terminer.
     total_temps = max(workunits_fin)
-    print("L'article d'id", article_id, "est un article primaire")
     return total_temps
 
 def print_article(article_id, delai, quantite):
@@ -145,7 +143,7 @@ def print_article(article_id, delai, quantite):
 
 
 # Exemple d'utilisation des fonctions pour créer 9 articles d'ID 1.
-article_id = 110
+article_id = 4
 quantite = 1
 recette = trouver_recette(article_id)
 #print(recette).
@@ -153,5 +151,4 @@ recette = trouver_recette(article_id)
 nouvelle_recette = transformer_recettes(recette)
 print(nouvelle_recette)
 delai = calculer_temps_production(nouvelle_recette, operations, 26, articles_primaire)
-print(delai)
 print_article(article_id, delai, quantite)
