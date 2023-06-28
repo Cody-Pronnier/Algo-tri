@@ -1,17 +1,37 @@
 import json
+import requests
 
-# Charger les données JSON dans des variables.
-with open('articles.json') as f:
-    articles = json.load(f)
+def recup_operationbyworkunit():
+    base_url = "http://82.64.231.72:8000/operations_by_workunit/"
+    ids = range(1, 27)  # Liste des ID de 1 à 26
+    data_list = []
 
-with open('operations.json') as f:
-    operations = json.load(f)
+    for id in ids:
+        url = base_url + str(id)
+        response = requests.get(url)
+        data = response.json()
+        data_list.append(data)
 
-with open('recipes.json') as f:
-    recettes = json.load(f)
+    for index, sublist in enumerate(data_list, start=1):
+        sublist.append({'id': index})
+
+    return data_list
+
+def recup_donnees(type):
+    url = "http://82.64.231.72:8000/" + type
+    print(url)
+    # Envoie une requête GET à l'URL et récupère la réponse.
+    response = requests.get(url)
+    if response.status_code == 200:
+        data = response.json()
+
+    # Envoie des données récupérées.
+    return data
+
 
  # Initialisation d'une variable globale pour les articles primaires.
 articles_primaire = []
+
 
 
 # Fonction pour trouver une recette pour un article donné.
@@ -34,7 +54,8 @@ def trouver_recette(article_id, liste_recette=None):
                         'id_composant1': recette.get('id_composant1'),
                         'quantite1': recette.get('quantite1'),
                         'id_composant2': recette.get('id_composant2'),
-                        'quantite2': recette.get('quantite2')}
+                        'quantite2': recette.get('quantite2')
+                        }
         liste_recette.append(recette_temp)
 
         # Check si premier composant est un article et on cherche sa recette.
@@ -50,13 +71,17 @@ def trouver_recette(article_id, liste_recette=None):
         if recette is None:
             global articles_primaire
             articles_primaire.append(article_id)
-            print("L'article d'id", article_id, "est un article primaire")
-
-
         
     # On retourne la liste de toutes les recettes trouvées.
     return liste_recette
 
+def multi_quantite(liste_recettes, quantite):
+    for recette in liste_recettes:
+        if recette.get('quantite1') is not None:
+            recette['quantite1'] *= quantite
+        if recette.get('quantite2') is not None:
+            recette['quantite2'] *= quantite
+    return liste_recettes
 
 def transformer_recettes(liste_recette):
     nouvelle_liste = []
@@ -141,14 +166,30 @@ def print_article(article_id, delai, quantite):
 
 
 
+# Charger les données JSON dans des variables.
+articles = recup_donnees("articles")
+operations = recup_donnees("operations")
+recettes = recup_donnees("recipes")
+workunitsbyoperations = recup_operationbyworkunit()
 
-# Exemple d'utilisation des fonctions pour créer 9 articles d'ID 1.
+# Exemple d'utilisation des fonctions pour créer un article en fonction d'une quantite.
 article_id = 4
-quantite = 1
+quantite = 20
+
+# Lancement des fonctions
+
+## On trouve les recettes de l'article
 recette = trouver_recette(article_id)
-#print(recette).
-#print("LISTE APRES FUSION").
-nouvelle_recette = transformer_recettes(recette)
-print(nouvelle_recette)
+
+## On multiplie par la quantite
+recette_quantite = multi_quantite(recette, quantite)
+
+## On enlève les doublons
+nouvelle_recette = transformer_recettes(recette_quantite)
+
+## On calcule le délai
 delai = calculer_temps_production(nouvelle_recette, operations, 26, articles_primaire)
+
+## On imprime le délai
 print_article(article_id, delai, quantite)
+
