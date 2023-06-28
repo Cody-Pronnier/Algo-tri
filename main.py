@@ -1,8 +1,10 @@
 import json
 import requests
+import time
 
 def recup_operationbyworkunit():
     base_url = "http://82.64.231.72:8000/operations_by_workunit/"
+    print("Récupération des données json de l'url: " + base_url)
     ids = range(1, 27)  # Liste des ID de 1 à 26
     data_list = []
 
@@ -14,17 +16,17 @@ def recup_operationbyworkunit():
 
     for index, sublist in enumerate(data_list, start=1):
         sublist.append({'id': index})
-
+    print("Récupération terminée avec succès")
     return data_list
 
 def recup_donnees(type):
     url = "http://82.64.231.72:8000/" + type
-    print(url)
+    print("Récupération des données json de l'url: " + url)
     # Envoie une requête GET à l'URL et récupère la réponse.
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-
+        print("Récupération terminée avec succès")
     # Envoie des données récupérées.
     return data
 
@@ -162,22 +164,32 @@ def calculer_temps_production(nouvelle_liste, operations, nombre_workunits, arti
     return total_temps
 
 def print_article(article_id, delai, quantite):
-        print("L'article d'id", article_id, "a été créé en", delai, "millisecondes pour une quantite de",  quantite)
+        print("L'article d'id", article_id, "a été créé avec un délai de", delai, "pour une quantite de",  quantite)
 
 
 
 # Charger les données JSON dans des variables.
 articles = recup_donnees("articles")
+time.sleep(1)
 operations = recup_donnees("operations")
+time.sleep(1)
 recettes = recup_donnees("recipes")
+time.sleep(1)
 workunitsbyoperations = recup_operationbyworkunit()
-
+time.sleep(1)
 # Exemple d'utilisation des fonctions pour créer un article en fonction d'une quantite.
 article_id = 4
 quantite = 20
 
 # Lancement des fonctions
-
+print("Lancement du processus de création de l'article d'id", article_id)
+time.sleep(1)
+print("Optimisation des chaînes de production en cours")
+time.sleep(1)
+print("Optimisation terminé")
+time.sleep(1)
+print("Lancement du processus de production")
+time.sleep(1)
 ## On trouve les recettes de l'article
 recette = trouver_recette(article_id)
 
