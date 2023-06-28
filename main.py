@@ -182,7 +182,6 @@ quantite = 20
 print("Lancement du processus de création de l'article d'id", article_id)
 print("Optimisation des chaînes de production en cours")
 print("Optimisation terminé")
-print("Lancement du processus de production")
 ## On trouve les recettes de l'article
 recette = trouver_recette(article_id)
 
@@ -193,6 +192,7 @@ recette_quantite = multi_quantite(recette, quantite)
 nouvelle_recette = transformer_recettes(recette_quantite)
 
 ## On calcule le délai
+print("Lancement du processus de production")
 delai = calculer_temps_production(nouvelle_recette, operations, 26, articles_primaire)
 
 ## On imprime le délai
