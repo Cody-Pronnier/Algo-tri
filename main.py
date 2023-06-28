@@ -164,32 +164,25 @@ def calculer_temps_production(nouvelle_liste, operations, nombre_workunits, arti
     return total_temps
 
 def print_article(article_id, delai, quantite):
-        print("L'article d'id", article_id, "a été créé avec un délai de", delai, "pour une quantite de",  quantite)
+        print("L'article d'id", article_id, "a été créé avec succès pour un délai de", delai, "et une quantite de",  quantite)
 
 
 
 # Charger les données JSON dans des variables.
 articles = recup_donnees("articles")
-time.sleep(1)
 operations = recup_donnees("operations")
-time.sleep(1)
 recettes = recup_donnees("recipes")
-time.sleep(1)
 workunitsbyoperations = recup_operationbyworkunit()
-time.sleep(1)
+
 # Exemple d'utilisation des fonctions pour créer un article en fonction d'une quantite.
 article_id = 4
 quantite = 20
 
 # Lancement des fonctions
 print("Lancement du processus de création de l'article d'id", article_id)
-time.sleep(1)
 print("Optimisation des chaînes de production en cours")
-time.sleep(1)
 print("Optimisation terminé")
-time.sleep(1)
 print("Lancement du processus de production")
-time.sleep(1)
 ## On trouve les recettes de l'article
 recette = trouver_recette(article_id)
 
