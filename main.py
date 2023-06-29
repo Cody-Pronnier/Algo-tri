@@ -126,20 +126,27 @@ def ajouter_delai(workunits):
     return workunits
 
 
-def calculer_temps_production(nouvelle_liste, operations, workunits, articles_primaires):
-    print(operations)
-    # Initialiser une liste pour les temps de fin de chaque unité de travail.
-    workunits_fin = [0] * workunits
+def calculer_temps_production(nouvelle_liste, operations, liste_workunits, articles_primaires):
+
     # Initialiser une liste pour garder une trace des articles en cours de production.
     articles_en_production = []
     # Initialiser un dictionnaire pour garder une trace des articles disponibles.
     articles_disponibles = {article: float('inf') for article in articles_primaires}
+    
+    
 
     # Tant qu'il y a des recettes dans la liste.
     while nouvelle_liste:
-        # Trouver la première unité de travail disponible.
-        workunit_disponible = workunits_fin.index(min(workunits_fin))
-              
+        
+            
+        liste_temporaire = []
+        id_operation = nouvelle_liste[0]['id_operation']
+        for element in liste_workunits:
+            for operation in element['operations']:    
+                if operation['id'] == id_operation:
+                    liste_temporaire.append(element)  
+    
+        element_plus_petit = min(liste_temporaire, key=lambda x: x['delai'])  
         
         for recette in nouvelle_liste:
             # Vérifier si tous les composants nécessaires sont disponibles.
@@ -157,12 +164,11 @@ def calculer_temps_production(nouvelle_liste, operations, workunits, articles_pr
                         if recette['id_composant2'] is not None:
                             temps_operation += recette['quantite2'] * operation['delai']
                         break
-
+                
                 # Mettre à jour le temps de fin de cette unité de travail.
-                if workunits_fin[workunit_disponible] < temps_operation:
-                    workunits_fin[workunit_disponible] = temps_operation
-                else:
-                    workunits_fin[workunit_disponible] += temps_operation
+                for element1 in liste_workunits:
+                    if element1['id'] == element_plus_petit['id']:
+                        element1['delai'] += temps_operation
 
                 # Marquer l'article comme "en cours de production".
                 articles_en_production.append(recette['id_article'])
@@ -179,9 +185,14 @@ def calculer_temps_production(nouvelle_liste, operations, workunits, articles_pr
         else:
             break
 
+    for element in liste_workunits:
+        code = element['code']
+        delai = element['delai']
+        print(f"Code: {code}, Délai: {delai}")
     # Le temps total de production est le temps de fin de la dernière unité de travail à terminer.
-    total_temps = max(workunits_fin)
-    return total_temps
+    total_temps = max(liste_workunits, key=lambda x: x['delai'])  
+
+    return total_temps['delai']
 
 def print_article(article_id, delai, quantite):
         print("L'article d'id", article_id, "a été créé avec succès pour un délai de", delai, "et une quantite de",  quantite)
@@ -198,10 +209,9 @@ workunitsbyoperations = recup_operationbyworkunit()
 liste_workunits = fusion_dictionnaire(workunits, workunitsbyoperations)
 liste_workunits = supprimer_derniere_operation(liste_workunits)
 liste_workunits = ajouter_delai(liste_workunits)
-print(liste_workunits)
 
 # Exemple d'utilisation des fonctions pour créer un article en fonction d'une quantite.
-article_id = 4
+article_id = 309
 quantite = 1
 
 
@@ -216,7 +226,7 @@ recette_quantite = multi_quantite(recette, quantite)
 nouvelle_recette = transformer_recettes(recette_quantite)
 
 ## On calcule le délai
-delai = calculer_temps_production(nouvelle_recette, operations, 26, articles_primaire)
+delai = calculer_temps_production(nouvelle_recette, operations, liste_workunits, articles_primaire)
 
 ## On imprime le délai
 print_article(article_id, delai, quantite)
