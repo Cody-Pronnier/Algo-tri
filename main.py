@@ -120,19 +120,23 @@ def supprimer_derniere_operation(workunits):
             workunit['operations'].pop()
     return workunits
 
+def ajouter_delai(workunits):
+    for workunit in workunits:
+        workunit['delai'] = 0
+    return workunits
+
 
 def calculer_temps_production(nouvelle_liste, operations, workunits, articles_primaires):
-
+    print(operations)
     # Initialiser une liste pour les temps de fin de chaque unité de travail.
     workunits_fin = [0] * workunits
     # Initialiser une liste pour garder une trace des articles en cours de production.
     articles_en_production = []
     # Initialiser un dictionnaire pour garder une trace des articles disponibles.
     articles_disponibles = {article: float('inf') for article in articles_primaires}
-    
+
     # Tant qu'il y a des recettes dans la liste.
     while nouvelle_liste:
-        print(workunits_fin)  
         # Trouver la première unité de travail disponible.
         workunit_disponible = workunits_fin.index(min(workunits_fin))
               
@@ -192,7 +196,9 @@ recettes = recup_donnees("recipes")
 workunits = recup_donnees("workunits")
 workunitsbyoperations = recup_operationbyworkunit()
 liste_workunits = fusion_dictionnaire(workunits, workunitsbyoperations)
-liste_work_units_corrigee = supprimer_derniere_operation(liste_workunits)
+liste_workunits = supprimer_derniere_operation(liste_workunits)
+liste_workunits = ajouter_delai(liste_workunits)
+print(liste_workunits)
 
 # Exemple d'utilisation des fonctions pour créer un article en fonction d'une quantite.
 article_id = 4
