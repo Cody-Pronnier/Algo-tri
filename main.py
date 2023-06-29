@@ -1,10 +1,8 @@
 import json
 import requests
-import time
 
 def recup_operationbyworkunit():
     base_url = "http://82.64.231.72:8000/operations_by_workunit/"
-    print("Récupération des données json de l'url: " + base_url)
     ids = range(1, 27)  # Liste des ID de 1 à 26
     data_list = []
 
@@ -16,23 +14,19 @@ def recup_operationbyworkunit():
 
     for index, sublist in enumerate(data_list, start=1):
         sublist.append({'id': index})
-    print("Récupération terminée avec succès")
     return data_list
 
 def recup_donnees(type):
     url = "http://82.64.231.72:8000/" + type
-    print("Récupération des données json de l'url: " + url)
     # Envoie une requête GET à l'URL et récupère la réponse.
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        print("Récupération terminée avec succès")
     # Envoie des données récupérées.
     return data
 
 
- # Initialisation d'une variable globale pour les articles primaires.
-articles_primaire = []
+
 
 
 
@@ -107,20 +101,42 @@ def transformer_recettes(liste_recette):
 
     return nouvelle_liste
 
-def calculer_temps_production(nouvelle_liste, operations, nombre_workunits, articles_primaires):
+def fusion_dictionnaire(workunits, operations):
+    # Créer une nouvelle liste de workunits avec les opérations ajoutées
+    workunits_avec_operations = []
+    for i in range(len(workunits)):
+        workunit = workunits[i]
+        if i < len(operations):
+            workunit['operations'] = operations[i]
+        else:
+            workunit['operations'] = []
+        workunits_avec_operations.append(workunit)
+        
+    return workunits_avec_operations
+
+def supprimer_derniere_operation(workunits):
+    for workunit in workunits:
+        if 'operations' in workunit and workunit['operations']:
+            workunit['operations'].pop()
+    return workunits
+
+
+def calculer_temps_production(nouvelle_liste, operations, workunits, articles_primaires):
 
     # Initialiser une liste pour les temps de fin de chaque unité de travail.
-    workunits_fin = [0] * nombre_workunits
+    workunits_fin = [0] * workunits
     # Initialiser une liste pour garder une trace des articles en cours de production.
     articles_en_production = []
     # Initialiser un dictionnaire pour garder une trace des articles disponibles.
     articles_disponibles = {article: float('inf') for article in articles_primaires}
-
+    
     # Tant qu'il y a des recettes dans la liste.
     while nouvelle_liste:
+        print(workunits_fin)  
         # Trouver la première unité de travail disponible.
         workunit_disponible = workunits_fin.index(min(workunits_fin))
-
+              
+        
         for recette in nouvelle_liste:
             # Vérifier si tous les composants nécessaires sont disponibles.
             if (recette['id_composant1'] in articles_disponibles and
@@ -166,22 +182,24 @@ def calculer_temps_production(nouvelle_liste, operations, nombre_workunits, arti
 def print_article(article_id, delai, quantite):
         print("L'article d'id", article_id, "a été créé avec succès pour un délai de", delai, "et une quantite de",  quantite)
 
-
+# Initialisation d'une variable globale pour les articles primaires.
+articles_primaire = []
 
 # Charger les données JSON dans des variables.
 articles = recup_donnees("articles")
 operations = recup_donnees("operations")
 recettes = recup_donnees("recipes")
+workunits = recup_donnees("workunits")
 workunitsbyoperations = recup_operationbyworkunit()
+liste_workunits = fusion_dictionnaire(workunits, workunitsbyoperations)
+liste_work_units_corrigee = supprimer_derniere_operation(liste_workunits)
 
 # Exemple d'utilisation des fonctions pour créer un article en fonction d'une quantite.
 article_id = 4
-quantite = 20
+quantite = 1
+
 
 # Lancement des fonctions
-print("Lancement du processus de création de l'article d'id", article_id)
-print("Optimisation des chaînes de production en cours")
-print("Optimisation terminé")
 ## On trouve les recettes de l'article
 recette = trouver_recette(article_id)
 
@@ -192,7 +210,6 @@ recette_quantite = multi_quantite(recette, quantite)
 nouvelle_recette = transformer_recettes(recette_quantite)
 
 ## On calcule le délai
-print("Lancement du processus de production")
 delai = calculer_temps_production(nouvelle_recette, operations, 26, articles_primaire)
 
 ## On imprime le délai
